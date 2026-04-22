@@ -1,0 +1,7 @@
+/*
+    ======================================== VARIANT CSS FILE ========================================
+-   Logic to detail custom styling based on a condition.
+-   Currently includes dark mode and light mode variant logic.
+*/
+
+@variant dark (&:where(.dark, .dark *));

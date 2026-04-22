@@ -1,0 +1,68 @@
+/**/
+
+/* Tooltip Bounce Animation */
+@keyframes subtle-bounce {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(4px); }
+}
+
+.tooltip-bounce {
+  animation: subtle-bounce 1.5s ease-in-out infinite;
+}
+
+/* Glow Border Effects */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes glow-spin {
+  to { --angle: 360deg; }
+}
+
+.glow-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.glow-border::before,
+.glow-border::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    var(--glow-color, var(--color-effect-glow-default)),
+    color-mix(in srgb, var(--glow-color, var(--color-effect-glow-default)) 60%, white),
+    var(--glow-color, var(--color-effect-glow-default)),
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow-border::after {
+  filter: blur(10px);
+  z-index: -2;
+}
+
+.glow-border:hover::before,
+.glow-border:hover::after {
+  opacity: 1;
+  animation: glow-spin 3s linear infinite;
+}
+
+.glow-border > * {
+  position: relative;
+  z-index: 1;
+}

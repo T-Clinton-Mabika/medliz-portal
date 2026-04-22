@@ -1,0 +1,87 @@
+/**/
+
+@theme {
+    /* Light Mode Base Colours */
+    --color-mode-light-brand: #22525e;
+    --color-mode-light-courses: #2a5e22;
+    --color-mode-light-blog: #350b40;
+    --color-mode-light-contributors: #cca600;
+
+    /* Dark Mode Base Colours */
+    --color-mode-dark-brand: #51c4e0;
+    --color-mode-dark-courses: #64e051;
+    --color-mode-dark-blog: #d07dff;
+    --color-mode-dark-contributors: #ffd933;
+
+    /* Effect Colours */
+    --color-effect-glow-brand: #00ccff;
+    --color-effect-glow-courses: #22ff00;
+    --color-effect-glow-blog: #b026ff;
+    --color-effect-glow-contributors: #ffd000;
+    --color-effect-glow-default: #7c3aed;
+
+    /* Auxillary Colours */
+    --color-auxillary-red: #f40009;
+    --color-auxillary-blog: #9b96f4;
+    --color-auxillary-courses: #008000;
+    --color-auxillary-orange: #e67e22;
+    --color-auxillary-blue: #40b5ad;
+
+    /* Base Colours */
+    --color-site-black-primary: #000a0d;
+    --color-site-black-secondary: #071012;
+    --color-site-black-tertiary: #00141a;
+    --color-site-black-muted: #000a0d0a;
+
+    --color-site-white-primary: #f8f9fa;
+    --color-site-white-secondary: #ebf3f5;
+    --color-site-white-tertiary: #d9f7ff;
+    --color-site-white-muted: #f8f9fa0a;
+
+    --color-site-grey-light-primary: #2b2d2d;
+    --color-site-grey-light-secondary: #4b4d4d;
+    --color-site-grey-dark-primary: #c4cacc;
+    --color-site-grey-dark-secondary: #a4aaac;
+
+}
+
+@layer base {
+    :root {
+        color-scheme: light;
+
+        /* Base Colour System Assignments */
+        --bg-background: var(--color-site-white-primary);
+        --bg-foreground: var(--color-site-white-secondary);
+        --text-mainText: var(--color-site-black-primary);
+        --text-mutedText: var(--color-site-grey-light-primary);
+        --border-borderOutline: var(--color-site-black-muted);
+
+        /* Section Colour System Assignments */
+        --color-site-general: var(--color-mode-light-brand);
+        --color-site-courses: var(--color-mode-light-courses);
+        --color-site-blog: var(--color-mode-light-blog);
+        --color-site-contributors: var(--color-mode-light-contributors);
+    }
+
+    .dark {
+        color-scheme: dark;
+
+        /* Base Colour System Assignments */
+        --bg-background: var(--color-site-black-primary);
+        --bg-foreground: var(--color-site-black-secondary);
+        --text-mainText: var(--color-site-white-primary);
+        --text-mutedText: var(--color-site-grey-dark-primary);
+        --border-borderOutline: var(--color-site-white-muted);
+
+        /* Section Colour System Assignments */
+        --color--site-general: var(--color-mode-dark-brand);
+        --color-site-courses: var(--color-mode-dark-courses);
+        --color-site-blog: var(--color-mode-dark-blog);
+        --color-site-contributors: var(--color-mode-dark-contributors);
+    }
+
+    body {
+        background-color: var(--bg-background);
+        color: var(--text-mainText);
+    }
+}

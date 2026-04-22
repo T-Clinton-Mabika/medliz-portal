@@ -1,0 +1,10 @@
+/*
+    ======================================== EXTERNALS CSS FILE ========================================
+-   Dependencies imported from external sources.
+-   This includes font/typefaces from google fonts (i.e. Archivo, Manrope, Kaushan Script and Lora)
+-   Importing of tailwind and additionally flag icons (used for the emergency contact information)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Archivo:wght@400;500;600;700&family=Kaushan+Script&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import "tailwindcss";
+@import "flag-icons/css/flag-icons.min.css";
+@plugin "@tailwindcss/typography";
