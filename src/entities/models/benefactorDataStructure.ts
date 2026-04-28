@@ -20,20 +20,20 @@ interface BenefactorDetails {
 /*
  * =========================== BENEFACTOR SCHEMA ===========================
  * - Combination of all data required for a site benefactor.
- * - Id: Follows the format xxx-xxxx-##.
+ * - Type: Refers to whether the benefactor is a more fixed sponsor (long-term) of the site, in which case they warrant a UI card.
+ * -       The other case a short-term sponsor who is only contributing to obtain a advertisement slot on the site (i.e. more one time sponsorship), do not warrant a UI card.
+ * - Id: Follows the format xx-xxxx-##.
  * -     xx is either ST - for short-term benefactor or LT - for long-term benefactor. 
  * -     xxxx is a letter based code derived from the benefactors name.
  * -     ## is the entry number of the benefactor.
  * - Avatar: The pathway to the benefactor's profile picture.
  * - Name: The name of the benefactor.
- * - Type: Refers to whether the benefactor is a more fixed sponsor (long-term) of the site, in which case they warrant a UI card.
- * -       The other case a short-term sponsor who is only contributing to obtain a advertisement slot on the site (i.e. more one time sponsorship), do not warrant a UI card.
  * - Details: These are the details for long-term benefactors as outlined under the BenefactorDetails interface. 
  */
 export interface BenefactorSchema {
+  benefactorType: "Short-Term" | "Long-Term"
   benefactorId: string
   benefactorAvatar: ThumbnailSchema
   benefactorName: string
-  benefactorType: "Short-Term" | "Long-Term"
   benefactorDetails?: BenefactorDetails
 }

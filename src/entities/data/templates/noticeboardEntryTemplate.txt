@@ -1,0 +1,12 @@
+Template for noticeboard entries.
+
+
+Wellness Tips Template
+{
+  nbEntryId: "WT-NOTICE-##",
+  nbEntryTitle: "",
+  nbEntryDate: "##/##/#####",
+  nbEntrySynopsis: "",
+  nbEntryContent: "",
+  nbEntry
+},
