@@ -1,0 +1,81 @@
+Template for a single article.
+
+Template for an AI involved article.
+{
+  articleId: "AE-XXXX###-AI",
+  articleInformation: {
+    contentSlug: "",
+    contentTitle: "",
+    contentThumbnail: {
+      avifPath: "assets/images/avif/XXXXX.avif",
+      pngPath: "assets/images/png/XXXXX.png",
+      webpPath: "assets/images/webp/XXXXX.webp",
+      altText: "",
+    },
+    contentSynopsis: "",
+    contentMetadata: {
+      contentAiUsage: true,
+      contentAiDisclaimer: "",
+      contentContributorIds: [
+        "GC-GNAI-01",
+        "XX-XXXX-##",
+      ],
+      contentPublishDate: "DD-MM-YYYY",
+      contentEstimatedDuration: {
+        estimatedDurationMeasurement: "minutes",
+        estimatedDurationValue: #,
+      },
+      contentLabels: [
+        "",
+      ],
+      contentReviewData: {
+        reviewCounter: #,
+        oneStarRating: #,
+        twoStarRating: #,
+        threeStarRating: #,
+        fourStarRating: #,
+        fiveStarRating: #,
+      },
+    },
+  },
+  articleContentPath: "content/articles/article-XXXX.md",
+},
+
+Template for a non-AI involved article.
+{
+  articleId: "AE-XXXX###-HA",
+  articleInformation: {
+    contentSlug: "",
+    contentTitle: "",
+    contentThumbnail: {
+      avifPath: "assets/images/avif/XXXXX.avif",
+      pngPath: "assets/images/png/XXXXX.png",
+      webpPath: "assets/images/webp/XXXXX.webp",
+      altText: "",
+    },
+    contentSynopsis: "",
+    contentMetadata: {
+      contentAiUsage: false,
+      contentContributorIds: [
+        "XX-XXXX-##",
+      ],
+      contentPublishDate: "DD-MM-YYYY",
+      contentEstimatedDuration: {
+        estimatedDurationMeasurement: "minutes",
+        estimatedDurationValue: #,
+      },
+      contentLabels: [
+        "",
+      ],
+      contentReviewData: {
+        reviewCounter: #,
+        oneStarRating: #,
+        twoStarRating: #,
+        threeStarRating: #,
+        fourStarRating: #,
+        fiveStarRating: #,
+      },
+    },
+  },
+  articleContentPath: "content/articles/article-XXXX.md",
+},

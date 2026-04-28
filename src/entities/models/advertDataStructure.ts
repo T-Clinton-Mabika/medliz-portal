@@ -15,7 +15,7 @@ interface AdvertismentLink {
 /*
  * =========================== ADVERTISEMENTS ===========================
  * - Final structure for the advertisements that will be displayed on the Home and About & Contact pages.
- * - Id: The id which follows the format xx-ADVERT-xxxx-##.
+ * - Id: The id which follows the format xx-AD-xxxx-##.
  * -     The first xx is either LT for long-term benefactor or ST for short-term benefactor.
  * -     The xxxx is a alpha-based code which is a combination of the advert title.
  * - Thumbnail: The thumbnail are the pathways and alternative text for the cover image for the advert.
@@ -33,5 +33,5 @@ export interface AdvertisementDataStructure {
   advertisementOwnerId: string
   advertisementSynopsis: string
   advertisementDetails: string
-  advertisementBtnContet: AdvertismentLink
+  advertisementBtnContent: AdvertismentLink
 }

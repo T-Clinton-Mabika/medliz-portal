@@ -9,14 +9,14 @@ import { DurationSchema } from "./generalSchema/baseSchema/durationSchema";
  * - Id: Unique identifier for the question in the format CS-xxxx###-MDxx##-QZ#-##.
  * -     CS-xxxx###-MDxx##-QZ# is derived/taken from the corresponding/associated module quiz id.
  * -     ## is the question number.
- * - Actual: This actual question that will be displayed during the quiz.
+ * - Content: This is the actual question that will be displayed during the quiz.
  * - Response Options: This is a list of potential answers the user can choose from to answer the question.
  * - Answer Index: Refers to the index value for the correct answer as stored in the response options list.
  */
 
 interface QuizQuestion {
   questionId: string
-  questionActual: string
+  questionContent: string
   questionResponseOptions: string[]
   questionAnswerIndex: number
 }
@@ -27,17 +27,18 @@ interface QuizQuestion {
  * - Id: Unique identifier for the question in the format CS-xxxx###-MDxx##-QZ#.
  * -     CS-xxxx###-MDxx## is derived/taken from the corresponding modules id.
  * -     QZ# is the quiz number in the module.
- * - Questions: List of all questions and their relevant data for this particular module quiz.
+ * - Pass Mark: The required score on the quiz to declare that you have passed.
  * - Estimated Duration: Data on how long it will possibly take to complete the quiz.
  * - Difficulty: The estimated difficulty level of the quiz.
+ * - Questions: List of all questions and their relevant data for this particular module quiz.
  */
 
 interface ModuleQuiz {
   quizId: string
-  quizQuestions: QuizQuestion[]
   quizPassMark: number
   quizEstimatedDuration: DurationSchema
   quizDifficulty: "Easy" | "Medium" | "Hard"
+  quizQuestions: QuizQuestion[]
 }
 
 /*
@@ -48,14 +49,14 @@ interface ModuleQuiz {
  * -     MDxx## is a alphanumeric code based on the module title and the module number in the course.
  * - Title: The name/heading/title of the module.
  * - Content Path: The filepath to the module/lesson content saved as a markdown file.
- * - Quiz: A list of all the quizzes that the module has.
+ * - Quizzes: A list of all the quizzes that the module has.
  */
 
 interface CourseModule {
   moduleId: string
   moduleTitle: string
   moduleContentPath: string
-  moduleQuiz: ModuleQuiz[]
+  moduleQuizzes: ModuleQuiz[]
 }
 
 /*
@@ -78,14 +79,14 @@ interface CourseMetadata {
  * - Id: Unique identifier for the question in the format CS-xxxx###.
  * -     CS means Course.
  * -     xxxx### is an alphanumeric code based on the title of the course and its entry number.
- * - Details: Course information stored in the format dictated by the GeneralContentSchema interface.
+ * - Information: Course information stored in the format dictated by the GeneralContentSchema interface.
  * - Metadata: Course specific metadata as outlined bt the CourseMetdata interface.
  * - Modules: List of all the modules offered under the course.
  */
 
 export interface CourseDataStructure {
   courseId: string
-  courseDetails: GeneralContentSchema
+  courseInformation: GeneralContentSchema
   courseMetadata: CourseMetadata
   courseModules: CourseModule[]
 }

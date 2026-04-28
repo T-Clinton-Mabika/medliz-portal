@@ -1,12 +1,53 @@
 Template for noticeboard entries.
 
+Site Update Template
 
-Wellness Tips Template
 {
-  nbEntryId: "WT-NOTICE-##",
+  nbEntryType: "Site Update",
+  nbEntryId: "SU-NOTICE-##",
   nbEntryTitle: "",
-  nbEntryDate: "##/##/#####",
+  nbEntryDate: "DD-MM-YYYY",
   nbEntrySynopsis: "",
   nbEntryContent: "",
-  nbEntry
+  nbEntrySource: "Medliz Admin",
+},
+
+
+Wellness Tips Template
+Template 1: Internal Source
+
+{
+  nbEntryType: "Wellness Tips",
+  nbEntryId: "WT-NOTICE-##",
+  nbEntryTitle: "",
+  nbEntryDate: "DD-MM-YYYY",
+  nbEntrySynopsis: "",
+  nbEntryContent: "",
+  nbEntrySource: "",
+},
+
+Template 2: External Source
+
+{
+  nbEntryType: "Wellness Tips",
+  nbEntryId: "WT-NOTICE-##",
+  nbEntryTitle: "",
+  nbEntryDate: "DD-MM-YYYY",
+  nbEntrySynopsis: "",
+  nbEntryContent: "",
+  nbEntrySource: "",
+  nbEntrySourceURL: "",
+},
+
+Health Alerts Template
+
+{
+  nbEntryType: "Health Alerts",
+  nbEntryId: "HA-NOTICE-##",
+  nbEntryTitle: "",
+  nbEntryDate: "DD-MM-YYYY",
+  nbEntrySynopsis: "",
+  nbEntryContent: "",
+  nbEntrySource: "",
+  nbEntrySourceURL: "",
 },

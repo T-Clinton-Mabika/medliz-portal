@@ -1,0 +1,37 @@
+Template for emergency contact directory entries.
+
+General Emergency Contact Entry Template
+
+{
+  countryName: "",
+  countryServices: [],
+},
+
+Individual Service Option Templates
+Police Service Entry Template
+
+{
+  serviceType: "Police",
+  serviceNumber "+##-####-####",
+},
+
+Fire Service Entry Template
+
+{
+  serviceType: "Fire",
+  serviceNumber "+##-####-####",
+},
+
+Ambulance Service Entry Template
+
+{
+  serviceType: "Ambulance",
+  serviceNumber "+##-####-####",
+},
+
+General Service Entry Template
+
+{
+  serviceType: "General",
+  serviceNumber "+##-####-####",
+},

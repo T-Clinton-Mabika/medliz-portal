@@ -1,0 +1,38 @@
+Template for advertisement entries
+
+Short-Term Benefactor advertisement template
+{
+  advertisementId: "ST-AD-XXXX-##",
+  advertisementThumbnail: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  advertisementTitle: "",
+  advertismentOwnerId: "ST-XXXX-##",
+  advertisementSynopsis: "",
+  advertisementDetails: "",
+  advertisementBtnContent: {
+    advertisementURL: "",
+    advertisementBtnText: "",
+  },
+},
+
+Long-Term Benefactor advertisement template
+{
+  advertisementId: "LT-AD-XXXX-##",
+  advertisementThumbnail: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  advertisementTitle: "",
+  advertismentOwnerId: "LT-XXXX-##",
+  advertisementSynopsis: "",
+  advertisementBtnContent: {
+    advertisementURL: "",
+    advertisementBtnText: "",
+  },
+},

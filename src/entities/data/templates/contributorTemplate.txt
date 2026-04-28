@@ -1,0 +1,132 @@
+Template for a site contributor.
+
+Non-Content generator team member.
+{
+  contributorType: "Team Member",
+  contributorId: "TM-XXXX-##",
+  contributorAvatar: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  contributorName: "",
+  contributorMetadata: {
+    contributorRoleTitle: "",
+    contentGenerator: false,
+    contributorQualifications: [],
+    contributorContactInfo: {
+      email: "",
+      phone: "+XX-XXX-XXXX",
+      website: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      linkedIn: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      facebook: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      twitter: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      instagram: {
+        platformHandle: "",
+        platformURL: "",
+      },
+    },
+  },
+},
+
+Content Generators
+Content generator team member.
+{
+  contributorType: "Team Member",
+  contributorId: "TM-XXXX-##",
+  contributorAvatar: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  contributorName: "",
+  contributorMetadata: {
+    contributorRoleTitle: "",
+    contentGenerator: true,
+    contributorQualifications: [
+      "",
+    ],
+    contributorContactInfo: {
+      email: "",
+      phone: "+XX-XXX-XXXX",
+      website: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      linkedIn: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      facebook: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      twitter: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      instagram: {
+        platformHandle: "",
+        platformURL: "",
+      },
+    },
+  },
+},
+
+Content Generator general contributor.
+{
+  contributorType: "General Contributor",
+  contributorId: "GC-XXXX-##",
+  contributorAvatar: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  contributorName: "",
+  contributorMetadata: {
+    contributorRoleTitle: "",
+    contentGenerator: true,
+    contributorQualifications: [
+      "",
+    ],
+    contributorContactInfo: {
+      email: "",
+      phone: "+XX-XXX-XXXX",
+      website: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      linkedIn: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      facebook: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      twitterX: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      instagram: {
+        platformHandle: "",
+        platformURL: "",
+      },
+    },
+  },
+},

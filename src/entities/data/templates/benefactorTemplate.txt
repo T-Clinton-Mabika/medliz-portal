@@ -1,0 +1,55 @@
+Template file for benefactors.
+
+Short-Term benefactor template.
+{
+  benefactorType: "Short-Term",
+  benefactorId: "ST-XXXX=##",
+  benefactorAvatar: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  benefactorName: "",
+},
+
+Long-Term benefactor template.
+{
+  benefactorType: "Long-Term",
+  benefactorId: "LT-XXXX=##",
+  benefactorAvatar: {
+    avifPath: "assets/images/avif/XXXXX.avif",
+    pngPath: "assets/images/png/XXXXX.png",
+    webpPath: "assets/images/webp/XXXXX.webp",
+    altText: "",
+  },
+  benefactorName: "",
+  benefactorDetails: {
+    benefactorSynopsis: "",
+    benefactorBio: "",
+    benefactorContactInfo: {
+      email: "",
+      phone: "+XX-XXX-XXXX",
+      website: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      linkedIn: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      facebook: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      twitterX: {
+        platformHandle: "",
+        platformURL: "",
+      },
+      instagram: {
+        platformHandle: "",
+        platformURL: "",
+      },
+    },
+  },
+},

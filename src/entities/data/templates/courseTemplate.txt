@@ -1,0 +1,157 @@
+Template for a single course data
+
+Template for a course that uses AI
+/*
+ * =========================== COURSE # ===========================
+ * - Course Title
+ * - Modules: # | Quizzes: # (Located in Module #) | AI USED
+ */
+
+ {
+  courseId: "CS-XXXX###",
+  courseInformation: {
+    contentSlug: "",
+    contentTitle: "",
+    contentThumbnail: {
+      avifPath: "assets/images/avif/XXXXX.avif",
+      pngPath: "assets/images/png/XXXXX.png",
+      webpPath: "assets/images/webp/XXXXX.webp",
+      altText: ""
+    },
+    contentSynopsis: "",
+    contentMetadata: {
+      contentAiUsage: true,
+      contentAiDisclaimer: "",
+      contentContributorIds: [
+        "GC-GNAI-01",
+        "XX-XXXX-##",
+      ],
+      contentPublishDate: "DD-MM-YYYY",
+      contentEstimatedDuration: {
+        estimatedDurationMeasurement: "minutes",
+        estimatedDurationValue: #,
+      },
+      contentLabels: [
+        ""
+      ],
+      contentReviewData: {
+        reviewCounter: #,
+        oneStarRating: #,
+        twoStarRating: #,
+        threeStarRating: #,
+        fourStarRating: #,
+        fiveStarRating: #,
+      },
+    },
+  },
+  courseMetadata: {
+    coursePreRequisites: [],
+    courseTargetAudience: "",
+    courseLanguage: "",
+  },
+  courseModules: [
+    {
+      moduleId: "CS-XXXX###-MDXX##",
+      moduleTitle: "",
+      moduleContentPath: "content/courses/course-#-module-#-XXXX.md",
+      moduleQuizzes: [
+        {
+          quizId: "CS-XXXX###-MDXX##-QZ#",
+          quizPassMark: #,
+          quizEstimatedDuration: {
+            estimatedDurationMeasurement: "",
+            estimatedDurationValue: #
+          },
+          quizDifficulty: "",
+          quizQuestions: [
+            {
+              questionId: "CS-XXXX###-MDXX##-QZ#-#",
+              questionContent: "",
+              questionResponse: [
+                "",
+              ],
+              questionAnswerIndex: #,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+ },
+
+ Template for a course that does not use AI
+/*
+ * =========================== COURSE # ===========================
+ * - Course Title
+ * - Modules: # | Quizzes: # (Located in Module #) | NO AI USED
+ */
+
+ {
+  courseId: "CS-XXXX###",
+  courseInformation: {
+    contentSlug: "",
+    contentTitle: "",
+    contentThumbnail: {
+      avifPath: "assets/images/avif/XXXXX.avif",
+      pngPath: "assets/images/png/XXXXX.png",
+      webpPath: "assets/images/webp/XXXXX.webp",
+      altText: ""
+    },
+    contentSynopsis: "",
+    contentMetadata: {
+      contentAiUsage: false,
+      contentContributorIds: [
+        "XX-XXXX-##",
+      ],
+      contentPublishDate: "DD-MM-YYYY",
+      contentEstimatedDuration: {
+        estimatedDurationMeasurement: "minutes",
+        estimatedDurationValue: #,
+      },
+      contentLabels: [
+        ""
+      ],
+      contentReviewData: {
+        reviewCounter: #,
+        oneStarRating: #,
+        twoStarRating: #,
+        threeStarRating: #,
+        fourStarRating: #,
+        fiveStarRating: #,
+      },
+    },
+  },
+  courseMetadata: {
+    coursePreRequisites: [],
+    courseTargetAudience: "",
+    courseLanguage: "",
+  },
+  courseModules: [
+    {
+      moduleId: "CS-XXXX###-MDXX##",
+      moduleTitle: "",
+      moduleContentPath: "content/courses/course-#-module-#-XXXX.md",
+      moduleQuizzes: [
+        {
+          quizId: "CS-XXXX###-MDXX##-QZ#",
+          quizPassMark: #,
+          quizEstimatedDuration: {
+            estimatedDurationMeasurement: "",
+            estimatedDurationValue: #
+          },
+          quizDifficulty: "",
+          quizQuestions: [
+            {
+              questionId: "CS-XXXX###-MDXX##-QZ#-#",
+              questionContent: "",
+              questionResponse: [
+                "",
+              ],
+              questionAnswerIndex: #,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+ },
