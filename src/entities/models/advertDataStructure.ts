@@ -1,6 +1,6 @@
 /* */
 
-import { ThumbnailSchema } from "./baseSchema/thumbnailSchema"
+import { ThumbnailSchema } from "./generalSchema/baseSchema/thumbnailSchema"
 
 /*
  * =========================== ADVERTISEMENT LINK INFORMATION ===========================

@@ -1,7 +1,9 @@
 /* */
 
-import { ReviewSchema } from "./reviewSchema";
-import { ThumbnailSchema } from "./thumbnailSchema";
+import { ReviewSchema } from "./baseSchema/reviewSchema";
+import { ThumbnailSchema } from "./baseSchema/thumbnailSchema";
+import { DurationSchema } from "./baseSchema/durationSchema";
+
 
 
 /*
@@ -13,7 +15,6 @@ import { ThumbnailSchema } from "./thumbnailSchema";
  * - ContributorIds: a list of all the contributors who were involved in the generation/publishing of the content. (If AIUsage true then AI contributor is to be included as well)
  * - PublishDate: the date when the content was published onto the website.
  * - EstimatedDuration: the estimated time to read an article or complete a course.
- * - EstDurMeasurement: the unit of measure used for the estimated duration. (i.e. minutes, hours or days)
  * - ContentLabels: these are tags/categories that the content fits underneath, mainly used for filtering.
  * - ReviewData: refers to the review data for the content as outlined in ReviewSchema.
  */
@@ -23,8 +24,7 @@ interface ContentMetadata {
   contentAiDisclaimer?: string
   contentContributorIds: string[]
   contentPublishDate: string
-  contentEstimatedDuration: number
-  contentEstDurMeasurement: "minutes" | "hours" | "days"
+  contentEstimatedDuration: DurationSchema
   contentLabels: string[]
   contentReviewData: ReviewSchema
 }

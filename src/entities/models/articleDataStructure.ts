@@ -1,11 +1,11 @@
 /* */
 
-import { GeneralContentSchema } from "./baseSchema/contentGeneralSchema";
+import { GeneralContentSchema } from "./generalSchema/contentGeneralSchema";
 
 /*
  * =========================== ARTICLE ===========================
  * - Final structure for article data as represented on the website.
- * - Id: The unique identifier that is an alphanumeric code that has AE-xxxx-###-xx.
+ * - Id: The unique identifier that is an alphanumeric code that has AE-xxxx###-xx.
  * -     Where AE means article.
  * -     xxxx is four letter code based on the article name.
  * -     ### is a numeric code referencing the articles post number.

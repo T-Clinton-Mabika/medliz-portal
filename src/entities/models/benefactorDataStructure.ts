@@ -1,7 +1,7 @@
 /** */
 
-import { ContactInformationSchema } from "./baseSchema/contactInfoSchema";
-import { ThumbnailSchema } from "./baseSchema/thumbnailSchema";
+import { ContactInformationSchema } from "./generalSchema/baseSchema/contactInfoSchema";
+import { ThumbnailSchema } from "./generalSchema/baseSchema/thumbnailSchema";
 
 /*
  * =========================== BENEFACTOR DETAILS ===========================
