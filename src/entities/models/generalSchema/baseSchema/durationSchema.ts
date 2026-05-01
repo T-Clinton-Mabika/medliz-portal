@@ -8,6 +8,6 @@
  */
 
 export interface DurationSchema {
-  estimatedDurationMeasurement: "minutes" | "hours" | "days"
+  estimatedDurationMeasurement: "min" | "hrs" | "d"
   estimatedDuration: number
 }

@@ -3,12 +3,12 @@ Template file for benefactors.
 Short-Term benefactor template.
 {
   benefactorType: "Short-Term",
-  benefactorId: "ST-XXXX=##",
+  benefactorId: "ST-XXXX-##",
   benefactorAvatar: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
+    avifPath: "assets/images/avif/profile-benefactor-st-XXXXX.avif",
+    pngPath: "assets/images/png/profile-benefactor-st-XXXXX.png",
+    webpPath: "assets/images/webp/profile-benefactor-st-XXXXX.webp",
+    altText: "Profile Picture: XXXXX",
   },
   benefactorName: "",
 },
@@ -16,12 +16,12 @@ Short-Term benefactor template.
 Long-Term benefactor template.
 {
   benefactorType: "Long-Term",
-  benefactorId: "LT-XXXX=##",
+  benefactorId: "LT-XXXX-##",
   benefactorAvatar: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
+    avifPath: "assets/images/avif/profile-benefactor-lt-XXXXX.avif",
+    pngPath: "assets/images/png/profile-benefactor-lt-XXXXX.png",
+    webpPath: "assets/images/webp/profile-benefactor-lt-XXXXX.webp",
+    altText: "Profile Picture: XXXXX",
   },
   benefactorName: "",
   benefactorDetails: {
@@ -32,22 +32,27 @@ Long-Term benefactor template.
       phone: "+XX-XXX-XXXX",
       website: {
         platformHandle: "",
+        platformName: "",
         platformURL: "",
       },
       linkedIn: {
         platformHandle: "",
+        platformName: "LinkedIn",
         platformURL: "",
       },
       facebook: {
         platformHandle: "",
+        platformName: "Facebook",
         platformURL: "",
       },
       twitterX: {
         platformHandle: "",
+        platformName: "X (formerly known as Twitter)",
         platformURL: "",
       },
       instagram: {
         platformHandle: "",
+        platformName: "Instagram",
         platformURL: "",
       },
     },

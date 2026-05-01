@@ -9,7 +9,7 @@ import { GeneralContentSchema } from "./generalSchema/contentGeneralSchema";
  * -     Where AE means article.
  * -     xxxx is four letter code based on the article name.
  * -     ### is a numeric code referencing the articles post number.
- * -     xx a two letter code referencing involvement of AI, where it could be either AI - for fully written by AI, HA - written by human author with the assistance of AI or HU - for completely written by a human.
+ * -     xx a two letter code referencing involvement of AI, where it could be either AI - for fully written by AI or HU - for completely written by a human.
  * - Information: Refers to base data about the content as laid out by GeneralContentSchema interface.
  * - ContentPath: Refers the pathway to the markdown file that contains the article content.
  */

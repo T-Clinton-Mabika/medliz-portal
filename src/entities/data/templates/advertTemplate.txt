@@ -4,13 +4,13 @@ Short-Term Benefactor advertisement template
 {
   advertisementId: "ST-AD-XXXX-##",
   advertisementThumbnail: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
+    avifPath: "assets/images/avif/advert-cover-benefactor-st-XXXXX.avif",
+    pngPath: "assets/images/png/advert-cover-benefactor-st-XXXXX.png",
+    webpPath: "assets/images/webp/advert-cover-benefactor-st-XXXXX.webp",
+    altText: "Advert Cover: XXXXX",
   },
   advertisementTitle: "",
-  advertismentOwnerId: "ST-XXXX-##",
+  advertisementOwnerId: "ST-XXXX-##",
   advertisementSynopsis: "",
   advertisementDetails: "",
   advertisementBtnContent: {
@@ -23,14 +23,15 @@ Long-Term Benefactor advertisement template
 {
   advertisementId: "LT-AD-XXXX-##",
   advertisementThumbnail: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
+    avifPath: "assets/images/avif/advert-cover-benefactor-lt-XXXXX.avif",
+    pngPath: "assets/images/png/advert-cover-benefactor-lt-XXXXX.png",
+    webpPath: "assets/images/webp/advert-cover-benefactor-lt-XXXXX.webp",
+    altText: "Advert Cover: XXXXX",
   },
   advertisementTitle: "",
-  advertismentOwnerId: "LT-XXXX-##",
+  advertisementOwnerId: "LT-XXXX-##",
   advertisementSynopsis: "",
+    advertisementDetails: "",
   advertisementBtnContent: {
     advertisementURL: "",
     advertisementBtnText: "",

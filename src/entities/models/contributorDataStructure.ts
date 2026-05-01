@@ -19,7 +19,7 @@ interface ContributorMetadata {
   contributorRoleTitle: string
   contentGenerator: boolean
   contributorQualifications: string[]
-  contributorContactInfo: ContactInformationSchema
+  contributorContactInfo?: ContactInformationSchema
 }
 
 /*

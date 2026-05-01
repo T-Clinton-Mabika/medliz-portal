@@ -7,10 +7,10 @@ Template for an AI involved article.
     contentSlug: "",
     contentTitle: "",
     contentThumbnail: {
-      avifPath: "assets/images/avif/XXXXX.avif",
-      pngPath: "assets/images/png/XXXXX.png",
-      webpPath: "assets/images/webp/XXXXX.webp",
-      altText: "",
+      avifPath: "assets/images/avif/article-cover-XXXXX.avif",
+      pngPath: "assets/images/png/article-cover-XXXXX.png",
+      webpPath: "assets/images/webp/article-cover-XXXXX.webp",
+      altText: "Article Cover: XXXXX",
     },
     contentSynopsis: "",
     contentMetadata: {
@@ -22,8 +22,8 @@ Template for an AI involved article.
       ],
       contentPublishDate: "DD-MM-YYYY",
       contentEstimatedDuration: {
-        estimatedDurationMeasurement: "minutes",
-        estimatedDurationValue: #,
+        estimatedDurationMeasurement: "min",
+        estimatedDuration: #,
       },
       contentLabels: [
         "",
@@ -38,20 +38,20 @@ Template for an AI involved article.
       },
     },
   },
-  articleContentPath: "content/articles/article-XXXX.md",
+  articleContentPath: "content/articles/ae-xxxx###-ai-XXXXX.md",
 },
 
 Template for a non-AI involved article.
 {
-  articleId: "AE-XXXX###-HA",
+  articleId: "AE-XXXX###-HU",
   articleInformation: {
     contentSlug: "",
     contentTitle: "",
     contentThumbnail: {
-      avifPath: "assets/images/avif/XXXXX.avif",
-      pngPath: "assets/images/png/XXXXX.png",
-      webpPath: "assets/images/webp/XXXXX.webp",
-      altText: "",
+      avifPath: "assets/images/avif/article-cover-XXXXX.avif",
+      pngPath: "assets/images/png/article-cover-XXXXX.png",
+      webpPath: "assets/images/webp/article-cover-XXXXX.webp",
+      altText: "Article Cover: XXXXX",
     },
     contentSynopsis: "",
     contentMetadata: {
@@ -61,8 +61,8 @@ Template for a non-AI involved article.
       ],
       contentPublishDate: "DD-MM-YYYY",
       contentEstimatedDuration: {
-        estimatedDurationMeasurement: "minutes",
-        estimatedDurationValue: #,
+        estimatedDurationMeasurement: "min",
+        estimatedDuration: #,
       },
       contentLabels: [
         "",
@@ -77,5 +77,5 @@ Template for a non-AI involved article.
       },
     },
   },
-  articleContentPath: "content/articles/article-XXXX.md",
+  articleContentPath: "content/articles/ae-xxxx###-HU-XXXXX.md",
 },

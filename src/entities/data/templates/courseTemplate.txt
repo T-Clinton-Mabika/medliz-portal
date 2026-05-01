@@ -13,10 +13,10 @@ Template for a course that uses AI
     contentSlug: "",
     contentTitle: "",
     contentThumbnail: {
-      avifPath: "assets/images/avif/XXXXX.avif",
-      pngPath: "assets/images/png/XXXXX.png",
-      webpPath: "assets/images/webp/XXXXX.webp",
-      altText: ""
+      avifPath: "assets/images/avif/course-cover-cs-xxxx###-XXXXX.avif",
+      pngPath: "assets/images/png/course-cover-cs-xxxx###-XXXXX.png",
+      webpPath: "assets/images/webp/course-cover-cs-xxxx###-XXXXX.webp",
+      altText: "Course Cover: XXXXX"
     },
     contentSynopsis: "",
     contentMetadata: {
@@ -28,11 +28,11 @@ Template for a course that uses AI
       ],
       contentPublishDate: "DD-MM-YYYY",
       contentEstimatedDuration: {
-        estimatedDurationMeasurement: "minutes",
-        estimatedDurationValue: #,
+        estimatedDurationMeasurement: "hrs",
+        estimatedDuration: #,
       },
       contentLabels: [
-        ""
+        "",
       ],
       contentReviewData: {
         reviewCounter: #,
@@ -45,27 +45,32 @@ Template for a course that uses AI
     },
   },
   courseMetadata: {
-    coursePreRequisites: [],
-    courseTargetAudience: "",
+    courseLevel: "Beginner",
+    coursePreRequisites: [
+      "",
+    ],
+    courseTargetAudience: [
+      "",
+    ],
     courseLanguage: "",
   },
   courseModules: [
     {
       moduleId: "CS-XXXX###-MDXX##",
       moduleTitle: "",
-      moduleContentPath: "content/courses/course-#-module-#-XXXX.md",
+      moduleContentPath: "content/courses/cs-xxxx###-mdxx##-XXXXX.md",
       moduleQuizzes: [
         {
           quizId: "CS-XXXX###-MDXX##-QZ#",
           quizPassMark: #,
           quizEstimatedDuration: {
             estimatedDurationMeasurement: "",
-            estimatedDurationValue: #
+            estimatedDuration: #,
           },
           quizDifficulty: "",
           quizQuestions: [
             {
-              questionId: "CS-XXXX###-MDXX##-QZ#-#",
+              questionId: "CS-XXXX###-MDXX##-QZ#-##",
               questionContent: "",
               questionResponse: [
                 "",
@@ -92,9 +97,9 @@ Template for a course that uses AI
     contentSlug: "",
     contentTitle: "",
     contentThumbnail: {
-      avifPath: "assets/images/avif/XXXXX.avif",
-      pngPath: "assets/images/png/XXXXX.png",
-      webpPath: "assets/images/webp/XXXXX.webp",
+      avifPath: "assets/images/avif/course-cover-cs-xxxx###-XXXXX.avif",
+      pngPath: "assets/images/png/course-cover-cs-xxxx###-XXXXX.png",
+      webpPath: "assets/images/webp/course-cover-cs-xxxx###-XXXXX.webp",
       altText: ""
     },
     contentSynopsis: "",
@@ -105,11 +110,11 @@ Template for a course that uses AI
       ],
       contentPublishDate: "DD-MM-YYYY",
       contentEstimatedDuration: {
-        estimatedDurationMeasurement: "minutes",
-        estimatedDurationValue: #,
+        estimatedDurationMeasurement: "hrs",
+        estimatedDuration: #,
       },
       contentLabels: [
-        ""
+        "",
       ],
       contentReviewData: {
         reviewCounter: #,
@@ -122,8 +127,13 @@ Template for a course that uses AI
     },
   },
   courseMetadata: {
-    coursePreRequisites: [],
-    courseTargetAudience: "",
+    courseLevel: "Beginner",
+    coursePreRequisites: [
+      "",
+    ],
+    courseTargetAudience: [
+      "",
+    ],
     courseLanguage: "",
   },
   courseModules: [
@@ -137,7 +147,7 @@ Template for a course that uses AI
           quizPassMark: #,
           quizEstimatedDuration: {
             estimatedDurationMeasurement: "",
-            estimatedDurationValue: #
+            estimatedDuration: #,
           },
           quizDifficulty: "",
           quizQuestions: [

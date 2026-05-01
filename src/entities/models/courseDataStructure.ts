@@ -15,10 +15,10 @@ import { DurationSchema } from "./generalSchema/baseSchema/durationSchema";
  */
 
 interface QuizQuestion {
-  questionId: string
-  questionContent: string
-  questionResponseOptions: string[]
-  questionAnswerIndex: number
+  questionId: string;
+  questionContent: string;
+  questionResponseOptions: string[];
+  questionAnswerIndex: number;
 }
 
 /*
@@ -34,11 +34,11 @@ interface QuizQuestion {
  */
 
 interface ModuleQuiz {
-  quizId: string
-  quizPassMark: number
-  quizEstimatedDuration: DurationSchema
-  quizDifficulty: "Easy" | "Medium" | "Hard"
-  quizQuestions: QuizQuestion[]
+  quizId: string;
+  quizPassMark: number;
+  quizEstimatedDuration: DurationSchema;
+  quizDifficulty: "Easy" | "Medium" | "Hard";
+  quizQuestions: QuizQuestion[];
 }
 
 /*
@@ -53,10 +53,10 @@ interface ModuleQuiz {
  */
 
 interface CourseModule {
-  moduleId: string
-  moduleTitle: string
-  moduleContentPath: string
-  moduleQuizzes: ModuleQuiz[]
+  moduleId: string;
+  moduleTitle: string;
+  moduleContentPath: string;
+  moduleQuizzes?: ModuleQuiz[];
 }
 
 /*
@@ -64,13 +64,14 @@ interface CourseModule {
  * - Course Metadata
  * - PreRequisites: This a list of information of items/prior experience recommended before undertaking the course.
  * - TargetAudience: The group/demographics of the people the course is catered towards.
- * - Language: The language that the course is offered in. 
+ * - Language: The language that the course is offered in.
  */
 
 interface CourseMetadata {
-  coursePreRequisites: string[]
-  courseTargetAudience: string[]
-  courseLanguage: string
+  courseLevel: "Beginner" | "Intermediate" | "Advanced";
+  coursePreRequisites: string[];
+  courseTargetAudience: string[];
+  courseLanguage: string;
 }
 
 /*
@@ -85,8 +86,8 @@ interface CourseMetadata {
  */
 
 export interface CourseDataStructure {
-  courseId: string
-  courseInformation: GeneralContentSchema
-  courseMetadata: CourseMetadata
-  courseModules: CourseModule[]
+  courseId: string;
+  courseInformation: GeneralContentSchema;
+  courseMetadata: CourseMetadata;
+  courseModules: CourseModule[];
 }

@@ -2,13 +2,13 @@ Template for a site contributor.
 
 Non-Content generator team member.
 {
-  contributorType: "Team Member",
+  contributorType: "Team-Member",
   contributorId: "TM-XXXX-##",
   contributorAvatar: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
+    avifPath: "assets/images/avif/profile-contributor-XXXXX.avif",
+    pngPath: "assets/images/png/profile-contributor-XXXXX.png",
+    webpPath: "assets/images/webp/profile-contributor-XXXXX.webp",
+    altText: "Profile Picture: XXXXX",
   },
   contributorName: "",
   contributorMetadata: {
@@ -20,38 +20,45 @@ Non-Content generator team member.
       phone: "+XX-XXX-XXXX",
       website: {
         platformHandle: "",
+        platformName: "",
         platformURL: "",
       },
       linkedIn: {
         platformHandle: "",
+        platformName: "LinkedIn",
         platformURL: "",
       },
       facebook: {
         platformHandle: "",
+        platformName: "Facebook",
         platformURL: "",
       },
-      twitter: {
+      twitterX: {
         platformHandle: "",
+        platformName: "X (formerly known as Twitter)",
         platformURL: "",
       },
       instagram: {
         platformHandle: "",
+        platformName: "Instagram",
         platformURL: "",
       },
     },
   },
+  contributorSynopsis: "",
+  contributorBio: "",
 },
 
 Content Generators
 Content generator team member.
 {
-  contributorType: "Team Member",
+  contributorType: "Team-Member",
   contributorId: "TM-XXXX-##",
   contributorAvatar: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
+    avifPath: "assets/images/avif/profile-contributor-XXXXX.avif",
+    pngPath: "assets/images/png/profile-contributor-XXXXX.png",
+    webpPath: "assets/images/webp/profile-contributor-XXXXX.webp",
+    altText: "Profile Picture: XXXXX",
   },
   contributorName: "",
   contributorMetadata: {
@@ -65,68 +72,82 @@ Content generator team member.
       phone: "+XX-XXX-XXXX",
       website: {
         platformHandle: "",
+        platformName: "",
         platformURL: "",
       },
       linkedIn: {
         platformHandle: "",
+        platformName: "LinkedIn",
         platformURL: "",
       },
       facebook: {
         platformHandle: "",
-        platformURL: "",
-      },
-      twitter: {
-        platformHandle: "",
-        platformURL: "",
-      },
-      instagram: {
-        platformHandle: "",
-        platformURL: "",
-      },
-    },
-  },
-},
-
-Content Generator general contributor.
-{
-  contributorType: "General Contributor",
-  contributorId: "GC-XXXX-##",
-  contributorAvatar: {
-    avifPath: "assets/images/avif/XXXXX.avif",
-    pngPath: "assets/images/png/XXXXX.png",
-    webpPath: "assets/images/webp/XXXXX.webp",
-    altText: "",
-  },
-  contributorName: "",
-  contributorMetadata: {
-    contributorRoleTitle: "",
-    contentGenerator: true,
-    contributorQualifications: [
-      "",
-    ],
-    contributorContactInfo: {
-      email: "",
-      phone: "+XX-XXX-XXXX",
-      website: {
-        platformHandle: "",
-        platformURL: "",
-      },
-      linkedIn: {
-        platformHandle: "",
-        platformURL: "",
-      },
-      facebook: {
-        platformHandle: "",
+        platformName: "Facebook",
         platformURL: "",
       },
       twitterX: {
         platformHandle: "",
+        platformName: "X (formerly known as Twitter)",
         platformURL: "",
       },
       instagram: {
         platformHandle: "",
+        platformName: "Instagram",
         platformURL: "",
       },
     },
   },
+  contributorSynopsis: "",
+  contributorBio: "",
+},
+
+Content Generator general contributor.
+{
+  contributorType: "General-Contributor",
+  contributorId: "GC-XXXX-##",
+  contributorAvatar: {
+    avifPath: "assets/images/avif/profile-contributor-XXXXX.avif",
+    pngPath: "assets/images/png/profile-contributor-XXXXX.png",
+    webpPath: "assets/images/webp/profile-contributor-XXXXX.webp",
+    altText: "Profile Picture: XXXXX",
+  },
+  contributorName: "",
+  contributorMetadata: {
+    contributorRoleTitle: "",
+    contentGenerator: true,
+    contributorQualifications: [
+      "",
+    ],
+    contributorContactInfo: {
+      email: "",
+      phone: "+XX-XXX-XXXX",
+      website: {
+        platformHandle: "",
+        platformName: "",
+        platformURL: "",
+      },
+      linkedIn: {
+        platformHandle: "",
+        platformName: "LinkedIn",
+        platformURL: "",
+      },
+      facebook: {
+        platformHandle: "",
+        platformName: "Facebook",
+        platformURL: "",
+      },
+      twitterX: {
+        platformHandle: "",
+        platformName: "X (formerly known as Twitter)",
+        platformURL: "",
+      },
+      instagram: {
+        platformHandle: "",
+        platformName: "Instagram",
+        platformURL: "",
+      },
+    },
+  },
+  contributorSynopsis: "",
+  contributorBio: "",
 },

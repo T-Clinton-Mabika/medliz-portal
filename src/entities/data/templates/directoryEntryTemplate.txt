@@ -8,30 +8,31 @@ General Emergency Contact Entry Template
 },
 
 Individual Service Option Templates
-Police Service Entry Template
+
+Ambulance Service Entry Template
 
 {
-  serviceType: "Police",
-  serviceNumber "+##-####-####",
+  serviceType: "Ambulance",
+  serviceNumber ##-####-####,
 },
 
 Fire Service Entry Template
 
 {
   serviceType: "Fire",
-  serviceNumber "+##-####-####",
+  serviceNumber: ##-####-####,
 },
 
-Ambulance Service Entry Template
+Police Service Entry Template
 
 {
-  serviceType: "Ambulance",
-  serviceNumber "+##-####-####",
+  serviceType: "Police",
+  serviceNumber: ##-####-####,
 },
 
-General Service Entry Template
+General/Unified Service Contact Entry Template
 
 {
-  serviceType: "General",
-  serviceNumber "+##-####-####",
+  serviceType: "Emergency Hotline",
+  serviceNumber: ##-####-####,
 },
