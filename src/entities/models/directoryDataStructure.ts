@@ -9,8 +9,8 @@
  */
 
 interface ServiceEntry {
-    serviceType: "Ambulance" | "Fire" | "Police" | "Emergency Hotline"
-    serviceNumber: number
+  serviceType: "Ambulance" | "Fire" | "Police" | "Emergency Hotline";
+  serviceNumber: number;
 }
 
 /*
@@ -20,6 +20,6 @@ interface ServiceEntry {
  */
 
 export interface DirectoryDataStructure {
-  countryName: string
-  countryServices: ServiceEntry[]
+  countryName: string;
+  countryServices: ServiceEntry[];
 }

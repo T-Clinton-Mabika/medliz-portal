@@ -4,8 +4,6 @@ import { ReviewSchema } from "./baseSchema/reviewSchema";
 import { ThumbnailSchema } from "./baseSchema/thumbnailSchema";
 import { DurationSchema } from "./baseSchema/durationSchema";
 
-
-
 /*
  * =========================== CONTENT METADATA ===========================
  * - Meta information about content on the site.
@@ -20,13 +18,13 @@ import { DurationSchema } from "./baseSchema/durationSchema";
  */
 
 interface ContentMetadata {
-  contentAiUsage: boolean
-  contentAiDisclaimer?: string
-  contentContributorIds: string[]
-  contentPublishDate: string
-  contentEstimatedDuration: DurationSchema
-  contentLabels: string[]
-  contentReviewData: ReviewSchema
+  contentAiUsage: boolean;
+  contentAiDisclaimer?: string;
+  contentContributorIds: string[];
+  contentPublishDate: string;
+  contentEstimatedDuration: DurationSchema;
+  contentLabels: string[];
+  contentReviewData: ReviewSchema;
 }
 
 /*
@@ -37,14 +35,14 @@ interface ContentMetadata {
  * - Slug: Used for the name on the content's url page.
  * - Title: The main name/title for the content which will appear on the page and in UI cards.
  * - Thumbnail: The cover image path used for content, that will be shown on UI cards and the content page.
- * - Synopsis: The excerpt (articles) or description (courses) that will appear on content UI cards. 
+ * - Synopsis: The excerpt (articles) or description (courses) that will appear on content UI cards.
  * - Metadata: Refers the information/data stored for the content as governed by the ContentMetdadata interface.
  */
 
 export interface GeneralContentSchema {
-  contentSlug: string
-  contentTitle: string
-  contentThumbnail: ThumbnailSchema
-  contentSynopsis: string
-  contentMetadata: ContentMetadata
+  contentSlug: string;
+  contentTitle: string;
+  contentThumbnail: ThumbnailSchema;
+  contentSynopsis: string;
+  contentMetadata: ContentMetadata;
 }

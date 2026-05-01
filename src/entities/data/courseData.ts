@@ -12,4 +12,4 @@ export const courses: CourseDataStructure[] = [
   ...cscddm002,
   ...csaclp003,
   ...csppsa004,
-]
+];

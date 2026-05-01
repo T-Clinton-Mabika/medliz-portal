@@ -7,12 +7,12 @@
  * - Name: The platform name.
  * -       Used inorder to create a concatenated string with the handle.
  * -       This concatenated string will be used as the text in the callout that appears on hover.
- * - URL: The link that leads to the entity's profile/page on the external platform. 
+ * - URL: The link that leads to the entity's profile/page on the external platform.
  */
 interface PlatformMedia {
-    platformHandle: string
-    platformName: string
-    platformURL: string
+  platformHandle: string;
+  platformName: string;
+  platformURL: string;
 }
 
 /*
@@ -36,16 +36,16 @@ interface PlatformMedia {
  * - Tiktok: Additional profile in case entity wishes to add their tiktok page.
  */
 export interface ContactInformationSchema {
-    email?: string
-    phone?: string
-    website?: PlatformMedia
-    linkedIn?: PlatformMedia
-    facebook?: PlatformMedia
-    twitterX?: PlatformMedia
-    instagram?: PlatformMedia
-    github?: PlatformMedia
-    behance?: PlatformMedia
-    dribbble?: PlatformMedia
-    youtube?: PlatformMedia
-    tiktok?: PlatformMedia
+  email?: string;
+  phone?: string;
+  website?: PlatformMedia;
+  linkedIn?: PlatformMedia;
+  facebook?: PlatformMedia;
+  twitterX?: PlatformMedia;
+  instagram?: PlatformMedia;
+  github?: PlatformMedia;
+  behance?: PlatformMedia;
+  dribbble?: PlatformMedia;
+  youtube?: PlatformMedia;
+  tiktok?: PlatformMedia;
 }

@@ -15,7 +15,7 @@ import { GeneralContentSchema } from "./generalSchema/contentGeneralSchema";
  */
 
 export interface ArticleDataStructure {
-  articleId: string
-  articleInformation: GeneralContentSchema
-  articleContentPath: string
+  articleId: string;
+  articleInformation: GeneralContentSchema;
+  articleContentPath: string;
 }

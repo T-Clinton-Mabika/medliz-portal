@@ -16,10 +16,10 @@ import { ThumbnailSchema } from "./generalSchema/baseSchema/thumbnailSchema";
  */
 
 interface ContributorMetadata {
-  contributorRoleTitle: string
-  contentGenerator: boolean
-  contributorQualifications: string[]
-  contributorContactInfo?: ContactInformationSchema
+  contributorRoleTitle: string;
+  contentGenerator: boolean;
+  contributorQualifications: string[];
+  contributorContactInfo?: ContactInformationSchema;
 }
 
 /*
@@ -38,11 +38,11 @@ interface ContributorMetadata {
  * - Bio: This is the detailed description of the contributor.
  */
 export interface ContributorDataStructure {
-  contributorType: "Team-Member" | "General-Contributor"
-  contributorId: string
-  contributorAvatar: ThumbnailSchema
-  contributorName: string
-  contributorMetadata: ContributorMetadata
-  contributorSynopsis: string
-  contributorBio: string
+  contributorType: "Team-Member" | "General-Contributor";
+  contributorId: string;
+  contributorAvatar: ThumbnailSchema;
+  contributorName: string;
+  contributorMetadata: ContributorMetadata;
+  contributorSynopsis: string;
+  contributorBio: string;
 }

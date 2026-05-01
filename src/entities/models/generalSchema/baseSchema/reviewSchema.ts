@@ -9,10 +9,10 @@
  */
 
 export interface ReviewSchema {
-  reviewCounter: number
-  oneStarRating: number
-  twoStarRating: number
-  threeStarRating: number
-  fourStarRating: number
-  fiveStarRating: number
+  reviewCounter: number;
+  oneStarRating: number;
+  twoStarRating: number;
+  threeStarRating: number;
+  fourStarRating: number;
+  fiveStarRating: number;
 }

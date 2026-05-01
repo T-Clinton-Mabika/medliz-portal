@@ -1,6 +1,6 @@
 /* */
 
-import { ThumbnailSchema } from "./generalSchema/baseSchema/thumbnailSchema"
+import { ThumbnailSchema } from "./generalSchema/baseSchema/thumbnailSchema";
 
 /*
  * =========================== ADVERTISEMENT LINK INFORMATION ===========================
@@ -8,8 +8,8 @@ import { ThumbnailSchema } from "./generalSchema/baseSchema/thumbnailSchema"
  * - BtnText: The text that appears on the button.
  */
 interface AdvertismentLink {
-  advertisementURL: string
-  advertisementBtnText: string
+  advertisementURL: string;
+  advertisementBtnText: string;
 }
 
 /*
@@ -22,16 +22,16 @@ interface AdvertismentLink {
  * - Title: The title/heading that will displayed on the advert.
  * - OwnerId: The internal benefactor id for the owner of the advert.
  * - Synopsis: This is the short description for the advert that will appear on the UI card.
- * - Details: Offers more information/context on the advertisement. 
+ * - Details: Offers more information/context on the advertisement.
  * -          This appears when hovering over the card. (or initial tap on smaller devices)
  * - BtnContent: This refers to the information stored for the ad in the structure detailed by AdvertisementLink interface.
  */
 export interface AdvertisementDataStructure {
-  advertisementId: string
-  advertisementThumbnail: ThumbnailSchema
-  advertisementTitle: string
-  advertisementOwnerId: string
-  advertisementSynopsis: string
-  advertisementDetails: string
-  advertisementBtnContent: AdvertismentLink
+  advertisementId: string;
+  advertisementThumbnail: ThumbnailSchema;
+  advertisementTitle: string;
+  advertisementOwnerId: string;
+  advertisementSynopsis: string;
+  advertisementDetails: string;
+  advertisementBtnContent: AdvertismentLink;
 }

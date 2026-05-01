@@ -16,12 +16,12 @@
  * -      The URL leads to the original post.
  */
 export interface NoticeboardDataStructure {
-  nbEntryType: "Wellness Tips" | "Health Alerts" | "Site Update"
-  nbEntryId: string
-  nbEntryTitle: string
-  nbEntryDate: string
-  nbEntrySynopsis: string
-  nbEntryContent: string
-  nbEntrySource: string
-  nbEntrySourceURL?: string
+  nbEntryType: "Wellness Tips" | "Health Alerts" | "Site Update";
+  nbEntryId: string;
+  nbEntryTitle: string;
+  nbEntryDate: string;
+  nbEntrySynopsis: string;
+  nbEntryContent: string;
+  nbEntrySource: string;
+  nbEntrySourceURL?: string;
 }

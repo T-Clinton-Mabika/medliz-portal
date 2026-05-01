@@ -9,8 +9,8 @@
  * - altText: The alternate text in the case that the image cannot be loaded.
  */
 export interface ThumbnailSchema {
-  avifPath: string
-  pngPath: string
-  webpPath: string
-  altText: string
+  avifPath: string;
+  pngPath: string;
+  webpPath: string;
+  altText: string;
 }

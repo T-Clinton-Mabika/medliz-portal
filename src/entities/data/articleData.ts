@@ -14,4 +14,4 @@ export const articles: ArticleDataStructure[] = [
   ...aendeg003ai,
   ...aeslre004ai,
   ...aeundb005ai,
-]
+];
