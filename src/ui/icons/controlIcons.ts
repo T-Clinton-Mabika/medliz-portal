@@ -6,7 +6,11 @@
  */
 
 import { MdMenuOpen, MdMenu } from "react-icons/md";
-import { IoClose } from "react-icons/io5";
+import {
+  IoClose,
+  IoChevronForwardOutline,
+  IoChevronBackOutline,
+} from "react-icons/io5";
 import { BsFillMoonStarsFill, BsSunFill, BsSearch } from "react-icons/bs";
 
 export const controlIcons = {
@@ -16,4 +20,6 @@ export const controlIcons = {
   darkMode: BsFillMoonStarsFill,
   lightMode: BsSunFill,
   search: BsSearch,
+  leftArrow: IoChevronBackOutline,
+  rightArrow: IoChevronForwardOutline,
 } as const;

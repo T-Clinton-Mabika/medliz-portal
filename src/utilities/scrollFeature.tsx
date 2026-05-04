@@ -1,6 +1,6 @@
 /*
  * =========================== SCROLL FUNCTIONS ===========================
- * - Scroll to top function to reset page position to top of page as user navigates from page to page
+ * - Scroll To Top: function to reset page position to top of page as user navigates from page to page.
  */
 
 import { useLocation } from "react-router-dom";
