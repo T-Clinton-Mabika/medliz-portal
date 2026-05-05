@@ -4,17 +4,14 @@
  */
 
 // Hero Underline Feature
-export { default as marker } from "./heroUnderlineFeature";
+export { MarkerStyleUnderline } from "./underline";
 
 // Carousel Feature
-export { carouselActual as carousel } from "./carouselFeature";
-export type { carouselItem } from "./carouselFeature";
+export { Carousel } from "./carousel";
+export type { CarouselItem } from "./carousel";
 
 // Dark Mode Context
-export { DarkModeProvider, useDarkMode } from "./darkModeContext";
+export { DarkModeProvider, useDarkMode } from "./darkMode";
 
 // Scroll Feature
-export { scrollToTop } from "./scrollFeature";
-
-// Search Overlay
-export { default as SearchOverlay } from "./searchOverlay";
+export { ScrollReset } from "./scrollReset";

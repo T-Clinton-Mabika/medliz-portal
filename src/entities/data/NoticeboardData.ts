@@ -2,7 +2,7 @@
 
 import { NoticeboardDataStructure } from "../models/noticeboardDataStructure";
 
-export const noticeboardEntries: NoticeboardDataStructure[] = [
+export const NoticeboardEntries: NoticeboardDataStructure[] = [
   /* =========================== HEALTH ALERTS =========================== */
   {
     nbEntryType: "Health Alerts",

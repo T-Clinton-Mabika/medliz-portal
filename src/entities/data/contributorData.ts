@@ -2,7 +2,7 @@
 
 import { ContributorDataStructure } from "../models/contributorDataStructure";
 
-export const contributors: ContributorDataStructure[] = [
+export const Contributors: ContributorDataStructure[] = [
   /* =========================== NON-TEAM MEMBERS =========================== */
   {
     contributorType: "General-Contributor",

@@ -6,14 +6,14 @@
 import React, { useState, useEffect, ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { controlIcons } from "../ui/icons";
+import { controlIcons } from "../icons";
 
-export interface carouselItem {
+export interface CarouselItem {
   id: string | number;
   [key: string]: any;
 }
 
-interface CarouselProps<T extends carouselItem> {
+interface CarouselProps<T extends CarouselItem> {
   carouselItemList: T[];
   renderItem: (item: T, glowColor: string) => ReactNode;
   glowColor?: string;
@@ -28,7 +28,7 @@ interface CarouselProps<T extends carouselItem> {
   autoRotate?: boolean;
 }
 
-export const carouselActual = <T extends carouselItem>({
+export const Carousel = <T extends CarouselItem>({
   carouselItemList,
   renderItem,
   glowColor = `var(--color-effect-glow-patrons)`,
@@ -183,5 +183,3 @@ export const carouselActual = <T extends carouselItem>({
     </div>
   );
 };
-
-export default carouselActual;

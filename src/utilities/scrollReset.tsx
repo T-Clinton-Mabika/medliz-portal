@@ -6,7 +6,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-export const scrollToTop = () => {
+export const ScrollReset = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {

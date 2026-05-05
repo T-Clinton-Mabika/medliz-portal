@@ -2,7 +2,7 @@
 
 import { BenefactorSchema } from "../models/benefactorDataStructure";
 
-export const benefactors: BenefactorSchema[] = [
+export const Benefactors: BenefactorSchema[] = [
   /* =========================== LONG-TEAM BENEFACTORS ============================ */
   {
     benefactorType: "Long-Term",

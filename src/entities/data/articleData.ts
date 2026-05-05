@@ -8,7 +8,7 @@ import { aendeg003ai } from "./articles/ae-ndeg003-ai-nutritionAndDietEvidenceBa
 import { aeslre004ai } from "./articles/ae-slre004-ai-sleepAndRecovery";
 import { aeundb005ai } from "./articles/ae-undb005-ai-understandingDiabetes";
 
-export const articles: ArticleDataStructure[] = [
+export const Articles: ArticleDataStructure[] = [
   ...aebfak001ai,
   ...aeghgu002ai,
   ...aendeg003ai,

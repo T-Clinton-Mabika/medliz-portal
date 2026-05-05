@@ -2,7 +2,7 @@
 
 import { DirectoryDataStructure } from "../models/directoryDataStructure";
 
-export const directoryEntries: DirectoryDataStructure[] = [
+export const Directory: DirectoryDataStructure[] = [
   {
     countryName: "United Kingdom",
     countryServices: [

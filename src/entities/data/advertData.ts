@@ -2,7 +2,7 @@
 
 import { AdvertisementDataStructure } from "../models/advertDataStructure";
 
-export const advertisements: AdvertisementDataStructure[] = [
+export const Advertisements: AdvertisementDataStructure[] = [
   /* =========================== SHORT-TERM BENEFACTOR ADS =========================== */
   {
     advertisementId: "ST-AD-CDPP-01",

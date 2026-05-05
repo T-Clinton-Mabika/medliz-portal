@@ -7,22 +7,22 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { controlIcons } from "../ui/icons";
-import { articles, courses } from "../entities/data";
-import { useDarkMode } from "./darkModeContext";
+import { controlIcons } from "../icons";
+import { Articles, Courses } from "../entities/data";
+import { useDarkMode } from "../utilities/darkMode";
 
-interface searchResult {
+interface SearchResult {
   title: string;
   link: string;
   type: string;
 }
 
-interface searchOverlayProps {
+interface SearchOverlayProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const SearchOverlay: React.FC<searchOverlayProps> = ({ isOpen, onClose }) => {
+const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const { isDark } = useDarkMode();
 
@@ -45,44 +45,40 @@ const SearchOverlay: React.FC<searchOverlayProps> = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
 
   //application of filter feature. cs means course, ae means article, lb means labels (i.e. tags).
-  const filterResults: searchResult[] =
+  const filterResults: SearchResult[] =
     searchQuery.length > 2
       ? [
           // Search/Filter option for articles.
-          ...articles
-            .filter((ae) => {
-              return (
-                ae.articleInformation.contentTitle
-                  .toLowerCase()
-                  .includes(searchQuery.toLowerCase()) ||
-                ae.articleInformation.contentMetadata.contentLabels.some((lb) =>
-                  lb.toLowerCase().includes(searchQuery.toLowerCase()),
-                )
-              );
-            })
-            .map((ae) => ({
-              title: ae.articleInformation.contentTitle,
-              link: `/med-blog/${ae.articleInformation.contentSlug}`,
-              type: "article",
-            })),
+          ...Articles.filter((ae) => {
+            return (
+              ae.articleInformation.contentTitle
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase()) ||
+              ae.articleInformation.contentMetadata.contentLabels.some((lb) =>
+                lb.toLowerCase().includes(searchQuery.toLowerCase()),
+              )
+            );
+          }).map((ae) => ({
+            title: ae.articleInformation.contentTitle,
+            link: `/med-blog/${ae.articleInformation.contentSlug}`,
+            type: "article",
+          })),
 
           // Search/Filter option for courses.
-          ...courses
-            .filter((cs) => {
-              return (
-                cs.courseInformation.contentTitle
-                  .toLowerCase()
-                  .includes(searchQuery.toLowerCase()) ||
-                cs.courseInformation.contentMetadata.contentLabels.some((lb) =>
-                  lb.toLowerCase().includes(searchQuery.toLowerCase()),
-                )
-              );
-            })
-            .map((cs) => ({
-              title: cs.courseInformation.contentTitle,
-              link: `/med-courses/${cs.courseInformation.contentSlug}`,
-              type: "course",
-            })),
+          ...Courses.filter((cs) => {
+            return (
+              cs.courseInformation.contentTitle
+                .toLowerCase()
+                .includes(searchQuery.toLowerCase()) ||
+              cs.courseInformation.contentMetadata.contentLabels.some((lb) =>
+                lb.toLowerCase().includes(searchQuery.toLowerCase()),
+              )
+            );
+          }).map((cs) => ({
+            title: cs.courseInformation.contentTitle,
+            link: `/med-courses/${cs.courseInformation.contentSlug}`,
+            type: "course",
+          })),
         ]
       : [];
 

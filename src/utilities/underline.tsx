@@ -6,7 +6,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-interface markerProps {
+interface MarkerStyleUnderlineProps {
   children: React.ReactNode;
   underlineVariable?: string;
   textVariable?: string;
@@ -16,7 +16,7 @@ interface markerProps {
   viewMargin?: string; // CSS margin format: e.g., "-50px", "0px", "100px 0px"
 }
 
-const marker: React.FC<markerProps> = ({
+export const MarkerStyleUnderline: React.FC<MarkerStyleUnderlineProps> = ({
   children,
   underlineVariable = "--color-auxiliary-white", //default to auxiliary white colour in the case of not defining a specific colour.
   textVariable,
@@ -83,5 +83,3 @@ const marker: React.FC<markerProps> = ({
     </span>
   );
 };
-
-export default marker;
